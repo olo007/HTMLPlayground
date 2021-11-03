@@ -1,0 +1,21 @@
+form{
+    display: table;
+}
+p{
+    display: table-row;
+}
+label{
+    display: table-cell;
+    margin-right:10%;
+}
+input{
+    display: table-cell;
+}
+textarea{
+    display:table-cell;
+    vertical-align: top;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    width: 400px;
+    height: 200px;
+}
