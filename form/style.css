@@ -20,6 +20,7 @@ h4{
 input{
     display: table-cell;
     margin: 0;
+    display: table-cell;
 }
 textarea{
     display:table-cell;
@@ -34,4 +35,6 @@ textarea{
 span{
     color:gray;
     font-size: small;
+    width: 400px;
+    height: 200px;
 }
