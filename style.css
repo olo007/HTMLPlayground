@@ -11,7 +11,17 @@
     font-size:24px;
     opacity:0.5;
     transition-duration: 0.4s;
+    text-align: center;
+    white-space: normal;
 }
 .button:hover{
     opacity: 1;
+    font-style: italic;
+    box-shadow: 4px 4px lightgrey;
+    border-style: dotted;
+    text-decoration: underline wavy slategray;
+    background-color: whitesmoke;
+}
+u{
+    text-decoration: underline double;    
 }

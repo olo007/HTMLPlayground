@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form example</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel=icon href="sources/icon.png">
+    </head>
+    <body>
+        <h1>Survey about the page</h1>
+        <form action="http://localhost/survey/sendSurvey.php" method="POST">
+            <p>
+                <label>Name:</label>
+                <input type="text" name="name" id="name" maxlength="30" style="display: table-cell;">
+            </p><br>
+            <p>
+                <div>
+                    <label>Which page on this<br>project do you like??</label>
+                </div>
+                <div style="display: table-cell; margin-left: 10px;">
+                    <input type="checkbox" name="isClickerGood"  style="vertical-align: bottom;">
+                    <h4>Clicker</h4>
+                    <br>
+                    <input type="checkbox" name="isTicTacToeGood" value="0" >
+                    <h4>TicTacToe</h4>
+                    <br>
+                    <input type="checkbox" name="isRockPaperScissorsGood">
+                    <h4>Rock Paper Scissors</h4>
+                    <br>
+                    <input type="checkbox" name="isSurveyGood">
+                    <h4>This form survey!</h4>
+                </div>
+            </p>
+            <p>
+                <label>Remarks:  </label>
+                <textarea placeholder="I would be gratefull if you could give me some feedback"
+                maxlength="500" name="remarkArea" id="remarkArea"></textarea>
+                <div style="display: table-cell;"></div>
+                <div style="float: right; display: table-cell;">
+                    <span id="lengthDiplayer"></span>
+                    <span>/</span>
+                    <span id="maxlengthDisplayer"> </span>
+                </div>
+                <script>
+                    document.getElementById("maxlengthDisplayer").innerHTML=document.getElementById("remarkArea").getAttribute("maxlength");
+                    document.getElementById("lengthDiplayer").innerHTML=document.getElementById("remarkArea").value.length;
+                    document.getElementById("remarkArea").addEventListener('input',function(){document.getElementById("lengthDiplayer").innerHTML=document.getElementById("remarkArea").value.length;});              
+                </script>
+            </p>
+            <p>
+                <div style="display: table-cell;"></div>
+                <input type="submit" value="Send">
+            </p>
+        </form> 
+    </body>
+</html>
