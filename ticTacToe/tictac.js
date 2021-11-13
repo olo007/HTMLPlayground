@@ -20,6 +20,7 @@ function cellClick(cellId){
     }else{
         table[cellId]=playerOnTurn;
         document.getElementById(cellId).innerHTML=playerOnTurn;
+        //document.getElementById(cellId).style.backgroundColor='CornflowerBlue';
         checkResult();
         if(gameActive) {changePlayer();}
     }
@@ -56,7 +57,11 @@ function restartGame(){
     roundNumber=0;
     table = ["", "", "", "", "", "", "", "", ""];
     for(let i=0;i<9;i++){
-        document.getElementById(i).innerHTML="";
+        let cell=document.getElementById(i);
+       //cell.style.backgroundColor='lightskyblue';
+        cell.innerHTML="";  
+        //cell.addEventListener("mouseover",function(cell){document.getElementById(i).style.backgroundColor='LightCyan';});
+        //cell.addEventListener("onmouseout",function(cell){document.getElementById(i).style.backgroundColor='lightskyblue';});
     }
     document.getElementById("messageDisplayer").innerHTML="It's "+playerOnTurn+" turn";
     gameActive=true;

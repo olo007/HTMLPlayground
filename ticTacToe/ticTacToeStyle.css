@@ -1,27 +1,95 @@
+body{
+    background-color: gray;
+}    
+#container{
+    margin-left: auto;
+    margin-right: auto;
+}
+#header{
+    text-align: center; 
+    text-shadow: 2px 2px gray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+#nav{
+    float:left;
+    width:100px;
+    padding: 5px;
+}
+#content{
+    float:left;
+    margin-left: auto;
+    margin-right: auto;
+}
+#right-content{
+    float:left;
+}
+#footer{
+    clear: both;
+}
+.game-container{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    width: 465px;
+    color: black;
+    background-color:lightgray;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+}
+#game-footer{
+    padding:5px;
+    align:center;
+    vertical-align: middle;
+    height: 80px;
+    background: radial-gradient(white,lightpink,PaleVioletRed,slategray);
+    border-style: solid;
+    border-width:2px;
+}
+#game-messagebox{
+    float:left;
+    width:330px;
+    text-shadow: 2px 2px gray;
+    vertical-align: middle;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#restartButton-box{
+    float:left;
+}
 h4{
     text-align:center;
     font-size: 36px; 
     display:inline;
     margin: 80px;
 }
-.game-container{
-    display:grid;
-    grid-template-columns: repeat(3,auto);
-    width: 465px;
-    color: midnightblue;
-    background-color:aquamarine;
-}
 .cell{
+    display:inline-block;
     background-color:lightskyblue;
     width: 150px;
     height: 150px;
     border: solid;
+    border-width: 1px;;
     font-size: 64px;
     cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    margin-top:1px;
+    margin-left:1px;
+    box-shadow: 2px 2px #555555;
 }
-button1{
-    display:inline-block;
+.cell:hover{
+    background-color: LightCyan;
+}
+.restartButton{
     width: 100px;
     height: 72px;
-    font-size: 60px;
+    border-radius: 5px;
+    box-shadow: 2px 2px white;
+    background: linear-gradient(to bottom,ghostwhite,lightgreen);
+    transition-duration: 0.4s;
+}
+.restartButton:hover{
+    background: linear-gradient(to bottom,ghostwhite,lime);
 }

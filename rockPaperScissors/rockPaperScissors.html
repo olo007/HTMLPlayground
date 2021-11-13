@@ -8,13 +8,20 @@
         <script src="game.js"></script>
     </head>
     <body>
-        <button onclick="play('rock')"><img src="sources/rock.png"></button>
-        <button onclick="play('paper')"><img src="sources/paper.png"></button>
-        <button onclick="play('scissors')"><img src="sources/scissors.png"></button>
-        <h4 id="showUserWins" style="color: green;">0</h4>
-        <h4 id="showComputerWins" style="color: red;">0</h4>
-        <div></div>
-        <button id="computerSign" style="background-image: url('sources/question.jpg'); background-size: cover;"></button>
-        <h4 id="message"></h4>
+        <div id="container">
+            <div id="user-box">
+                <button onclick="play('rock')"><img src="sources/rock.png"></button>
+                <button onclick="play('paper')"><img src="sources/paper.png"></button>
+                <button onclick="play('scissors')"><img src="sources/scissors.png"></button>
+            </div>
+            <div id="scores-box">
+                <div class="score" id="showUserWins" style="color: green;">0</div>
+                <div class="score" id="showComputerWins" style="color: red;">0</div>
+            </div>
+            <div id="computer-box">
+                <button id="computerSign" style="background-image: url('sources/question.jpg'); background-size: cover;"></button>
+                <h4 id="message"></h4>
+            </div>
+        </div>
     </body>
 </html>

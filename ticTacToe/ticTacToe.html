@@ -7,20 +7,40 @@
         <link rel=icon href="sources/icon.png">
         <script src="tictac.js"></script>
     </head>
-    <body style="background-color: khaki;">
-        <h1 style="text-align: center;">Tic Tac Toe</h1>      
-        <div class="game-container">
-            <button onclick="cellClick(0)" id=0 class="cell"></button>
-            <button onclick="cellClick(1)" id=1 class="cell"></button>
-            <button onclick="cellClick(2)" id=2 class="cell"></button>
-            <button onclick="cellClick(3)" id=3 class="cell"></button>
-            <button onclick="cellClick(4)" id=4 class="cell"></button>
-            <button onclick="cellClick(5)" id=5 class="cell"></button>
-            <button onclick="cellClick(6)" id=6 class="cell"></button>
-            <button onclick="cellClick(7)" id=7 class="cell"></button>
-            <button onclick="cellClick(8)" id=8 class="cell"></button>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1>Tic Tac Toe</h1>  
+            </div>
+            <div id="nav">
+
+            </div>
+            <div id="content">
+                <div class="game-container">
+                    <button onclick="cellClick(0)" id=0 class="cell"></button>
+                    <button onclick="cellClick(1)" id=1 class="cell"></button>
+                    <button onclick="cellClick(2)" id=2 class="cell"></button>
+                    <button onclick="cellClick(3)" id=3 class="cell"></button>
+                    <button onclick="cellClick(4)" id=4 class="cell"></button>
+                    <button onclick="cellClick(5)" id=5 class="cell"></button>
+                    <button onclick="cellClick(6)" id=6 class="cell"></button>
+                    <button onclick="cellClick(7)" id=7 class="cell"></button>
+                    <button onclick="cellClick(8)" id=8 class="cell"></button>
+                </div>
+                <div id="game-footer">
+                    <div id="game-messagebox">
+                        <h4 id="messageDisplayer">It's X turn</h4>
+                    </div>
+                    <div id="restartButton-box">
+                        <button class="restartButton" onclick="restartGame()">RESTART</button></div>  
+                </div>
+            </div>
+            <div id="right-content">
+
+            </div>
+            <div id=footer">
+
+            </div>
         </div>
-        <h4 id="messageDisplayer">It's X turn</h4>
-        <button class="button1" style="width: 100px; height: 60px;"" onclick="restartGame()">Restart</button>
     </body>
 </html>
